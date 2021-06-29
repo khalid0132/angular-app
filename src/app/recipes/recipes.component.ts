@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 // import { Recipe } from './recipe.model';
-import { RecipeService } from './recipe.service';
+// import { RecipeService } from './recipe.service';
 
 @Component({
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css'],
-  providers: [RecipeService]
+  // providers: [RecipeService] 
+  // providers moved to app.module providers to get new added items
 })
 export class RecipesComponent implements OnInit {
   // selectedRecipe: Recipe;
