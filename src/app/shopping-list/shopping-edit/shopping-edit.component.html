@@ -27,20 +27,20 @@
             </div>
             <!-- #amountInput -->
             
-            <!--Validator: pattern ="^[1-9]+[0-9]*$" and [pattern] ="'^[1-9]+[0-9]*$'" both way can we bind-->
+            <!--Validator: pattern ="^[1-9]+[0-9]*$" and [pattern] ="'^[1-9]+[0-9]*$'" we may used both way for binding-->
 
             <div class="row">
                 <div class="col-xs-12">
                     <button 
                         class="btn btn-success" 
                         type="submit"
-                        [disabled] = !f.valid>{{editMode ? 'Update' : 'Add'}}</button>
+                        [disabled] = !f.valid>{{editMode ? 'Update' : 'Add'}}</button> |
                     <button 
                         class="btn btn-danger" 
                         type="button" 
                         (click) ="onDelete()" 
                         *ngIf ="editMode"
-                        >Delete</button>
+                        >Delete</button> | 
                     <button class="btn btn-primary" type="button" (click) = "onClear()">Clear</button>
                 </div>
             </div>
